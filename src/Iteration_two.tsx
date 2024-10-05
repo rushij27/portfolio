@@ -113,7 +113,18 @@ const Portfolio = () => {
             year="2021"
             title="Software Engineer"
             company="Invimatic Technologies, Pune"
-            description="Developed and maintained backend systems for a location-based social networking application. Utilized Python, Django, and PostgreSQL to create scalable solutions."
+            description="Maintained legacy codebase while refactoring parts of the
+              application to use newer technologies like React.js and Angular.
+              Implemented Redux & Redux-Saga as the management tool in the
+              application.
+              Worked on Jest test coverage and achieved coverage 90% of all the 3
+              different applications.
+              Experience in implementing Formik, Material UI and React Router
+              through out all the projects.
+              Experience in functional testing new features and defects to verify
+              proper working order.
+              Utilized version control systems such as Git for tracking changes made
+              in source code over time."
           />
         </section>
 
