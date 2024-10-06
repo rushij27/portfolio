@@ -12,7 +12,12 @@ import Redux from "./assets/images/redux.png";
 import Logo from "./assets/images/RJ_-removebg-preview.png";
 import Tailwind from "./assets/images/tailwind.png";
 import Typescript from "./assets/images/typescript.png";
-;
+import data from "./assets/data/data.json";
+
+interface SkillIconProps {
+  name: string;
+  icon: JSX.Element;
+}
 
 interface ExperienceItemProps {
   year: string;
@@ -55,13 +60,13 @@ const Portfolio = () => {
             <img src={Logo} alt="Logo" />
           </div>
           <ul className="flex space-x-5 cursor-pointer">
-            <li onClick={scrollToAbout} className="hover:text-yellow-400 hover:scale-110">About</li>
-            <li onClick={scrollToExperience} className="hover:text-yellow-400 hover:scale-110">Experience</li>
-            <li onClick={scrollToContact} className="hover:text-yellow-400 hover:scale-110">Contact</li>
+            <li onClick={scrollToAbout} className="hover:text-yellow-400 hover:scale-110">{data.about}</li>
+            <li onClick={scrollToExperience} className="hover:text-yellow-400 hover:scale-110">{data.experience}</li>
+            <li onClick={scrollToContact} className="hover:text-yellow-400 hover:scale-110">{data.contact}</li>
           </ul>
           <div className="cursor-pointer flex items-center space-x-1">
-            <GithubIcon className="mr-1 hover:text-yellow-400 hover:scale-125" size={18} onClick={() => window.open("https://github.com/rushij27", "_blank")} />
-            <LinkedinIcon className="mr-1 hover:text-yellow-400 hover:scale-125" size={18} onClick={() => window.open("https://www.linkedin.com/in/rushiikeshjagtap/", "_blank")} />
+            <GithubIcon className="mr-1 hover:text-yellow-400 hover:scale-125" size={18} onClick={() => window.open(data.github, "_blank")} />
+            <LinkedinIcon className="mr-1 hover:text-yellow-400 hover:scale-125" size={18} onClick={() => window.open(data.linkedin, "_blank")} />
           </div>
         </nav>
       </header>
@@ -70,20 +75,20 @@ const Portfolio = () => {
         <div className="flex items-center justify-center">
           <div className="w-1/2">
             <div>
-              <div>I'm <h1 className="text-5xl font-bold mb-2 text-yellow-400 font-mono">Rushikesh Jagtap</h1></div>
+              <div>{data.i}<h1 className="text-5xl font-bold mb-2 text-yellow-400 font-mono">{data.name}</h1></div>
               <p className="text-xl mb-4">
-                Senior Software Engineer
+                {data.designation}
               </p>
               <div>
               </div>
-              <button onClick={scrollToExperience} className="cursor-pointer border border-yellow-500 text-yellow-500 px-6 py-2 mb-2 rounded-md transform transition-transform duration-300 hover:scale-110">
-                Contact Me
+              <button onClick={scrollToContact} className="cursor-pointer border border-yellow-500 text-yellow-500 px-6 py-2 mb-2 rounded-md transform transition-transform duration-300 hover:scale-110">
+                {data.contactMe}
               </button>
             </div>
             <div className="mt-1">
               <button className="cursor-pointer bg-yellow-500 text-black px-6 py-2 rounded-md transform transition-transform duration-300 hover:scale-110">
                 <a href="/Rushikesh_Jagtap_Resume.pdf" download={true} className="flex flex-row items-center">
-                  <Download className="mr-1" size={18} /> Download Resume
+                  <Download className="mr-1" size={18} /> &nbsp;{data.resume}
                 </a>
               </button>
             </div>
@@ -97,24 +102,17 @@ const Portfolio = () => {
 
       <main className="container mx-auto px-5">
         <section className="mb-16 shadow-xl p-4" ref={aboutMeRef}>
-          <h2 className="text-2xl font-bold mb-4">About</h2>
+          <h2 className="text-2xl font-bold mb-4">{data.about}</h2>
           <div className="flex p-4 ">
             <div className="w-1/6 h-1 bg-yellow-500 my-3 mx-1"></div>
             <p className="text-gray-300 mb-4 ml-1 w-3/4">
-              I specialize in building and maintaining modern, responsive web
-              applications using React, Angular, Redux, JavaScript, TypeScript,
-              HTML, and CSS. With a passion for clean code and user-focused
-              design, I excel at managing multiple projects and mentoring junior
-              developers. My strong problem-solving skills, attention to detail,
-              and ability to adapt quickly help me consistently deliver
-              high-quality work. I thrive in collaborative environments and
-              always seek new opportunities to learn and improve.
+              {data.aboutMe}
             </p>
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4">My Skills</h2>
+          <h2 className="text-2xl font-bold mb-4">{data.mySkills}</h2>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 font-poppins">
             <SkillIcon
               name="Angular"
@@ -160,49 +158,35 @@ const Portfolio = () => {
         </section>
 
         <section className="mb-16" ref={experienceRef}>
-          <h2 className="text-2xl font-bold mb-4">Experience</h2>
+          <h2 className="text-2xl font-bold mb-4">{data.experience}</h2>
           <ExperienceItem
-            year="2023"
-            title="Senior Software Engineer"
-            company="Invimatic Technologies, Pune"
-            description={[
-              "Developed and maintained applications with Tailwind CSS, Formik, and custom components.",
-              "Designed, developed, tested, and deployed high-quality applications utilizing Agile methodology.",
-              "Managed multiple projects simultaneously while meeting tight deadlines.",
-              "Mentored newly hired software engineers through routine coaching and training opportunities.",
-              "Added test cases in Cypress for an enterprise-level application.",
-              "Analyzed user needs to determine technical requirements."
-            ]}
+            year={data.yearTwo}
+            title={data.designation}
+            company={data.company}
+            description={data.experienceDescription[2023]}
           />
           <ExperienceItem
-            year="2021"
-            title="Software Engineer"
-            company="Invimatic Technologies, Pune"
-            description={[
-              "Maintained legacy codebase while refactoring parts of the application to use newer technologies like React.js and Angular.",
-              "Implemented Redux & Redux-Saga as the management tool in the application.",
-              "Worked on Jest test coverage and achieved coverage 90% of all the 3 different applications.",
-              "Experience in implementing Formik, Material UI and React Router through out all the projects.",
-              "Experience in functional testing new features and defects to verify proper working order.",
-              "Utilized version control systems such as Git for tracking changes made in source code over time."
-            ]}
+             year={data.yearOne}
+            title={data.title}
+            company={data.company}
+            description={data.experienceDescription[2021]}
           />
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
+          <h2 className="text-2xl font-bold mb-4">{data.contactMe}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-lg mx-auto md:max-w-none" ref={contactMeRef}>
-            <div onClick={() => window.open("mailto:imrushi@gmail")} className="cursor-pointer text-yellow-500 bg-gray-800 p-5 flex flex-row justify-center rounded-lg transform transition-transform duration-300 hover:scale-110">
+            <div onClick={() => window.open(data.mailto)} className="cursor-pointer text-yellow-500 bg-gray-800 p-5 flex flex-row justify-center rounded-lg transform transition-transform duration-300 hover:scale-110">
               <Mail className="text-white mr-3" />
-              imrushi@gmail.com
+              {data.email}
             </div>
-            <div onClick={() => window.open("tel:+919503432790")} className="cursor-pointer text-yellow-500 bg-gray-800 p-5 flex flex-row justify-center rounded-lg transform transition-transform duration-300 hover:scale-110">
+            <div onClick={() => window.open(data.tel)} className="cursor-pointer text-yellow-500 bg-gray-800 p-5 flex flex-row justify-center rounded-lg transform transition-transform duration-300 hover:scale-110">
               <Phone className="text-white mr-3" />
-              (+91) 9503432790
+              {data.phone}
             </div>
-            <div onClick={() => window.open("https://www.google.com/maps/place/Talegaon+Dabhade,+Maharashtra/")} className="cursor-pointer text-yellow-500 bg-gray-800 p-5 flex flex-row justify-center rounded-lg transform transition-transform duration-300 hover:scale-110">
+            <div onClick={() => window.open(data.address)} className="cursor-pointer text-yellow-500 bg-gray-800 p-5 flex flex-row justify-center rounded-lg transform transition-transform duration-300 hover:scale-110">
               <MapPin className="text-white mr-3" />
-              Pune, India
+              {data.location}
             </div>
           </div>
         </section>
@@ -210,12 +194,12 @@ const Portfolio = () => {
 
       <div className="flex flex-row justify-center py-4 text-3xl">
         <h3>
-          {"<>"} Thanks for Scrolling {"</>"}.
+          {"<>"}{data.thanks} {"</>"}
         </h3>
       </div>
       <footer className="bg-gray-800 text-white p-4 mt-8">
         <div className="container mx-auto flex justify-center items-center h-24">
-          <p>&copy; 2024 Rushikesh Jagtap. All rights reserved.</p>
+          <p>&copy; {data.copyright}</p>
         </div>
       </footer>
     </div>
@@ -224,9 +208,9 @@ const Portfolio = () => {
 
 export default Portfolio;
 
-const SkillIcon = ({ name, icon }: any) => (
+const SkillIcon = ({ name, icon }: SkillIconProps) => (
   <div className="bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-evenly h-52 hover:bg-yellow-100 hover:text-gray-800 shadow-2xl
-  transform transition-transform duration-300 hover:scale-107 cursor-pointer">
+  transform transition-transform duration-300 hover:scale-110">
     <div className="w-20 h-20">{icon}</div>
     <div className="text-md">{name}</div>
   </div>

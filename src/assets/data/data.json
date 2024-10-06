@@ -1,0 +1,44 @@
+{
+  "name": "Rushikesh Jagtap",
+  "title": "Software Engineer",
+  "designation": "Senior Software Engineer",
+  "contact": "Contact",
+  "about": "About",
+  "experience": "Experience",
+  "contactMe": "Contact Me",
+  "resume": "Resume",
+  "i": "I'm",
+  "mySkills": "My Skills",
+  "company": "Invimatic Technologies, Pune",
+  "aboutMe": "I specialize in building and maintaining modern, responsive web applications using React, Angular, Redux, JavaScript, TypeScript, HTML, and CSS. With a passion for clean code and user-focused design, I excel at managing multiple projects and mentoring junior developers. My strong problem-solving skills, attention to detail and ability to adapt quickly help me consistently deliver high-quality work. I thrive in collaborative environments and always seek new opportunities to learn and improve.",
+  "experienceDescription": {
+    "2023": [
+      "Developed and maintained applications with Tailwind CSS, Formik, and custom components.",
+      "Designed, developed, tested, and deployed high-quality applications utilizing Agile methodology.",
+      "Managed multiple projects simultaneously while meeting tight deadlines.",
+      "Mentored newly hired software engineers through routine coaching and training opportunities.",
+      "Added test cases in Cypress for an enterprise-level application.",
+      "Analyzed user needs to determine technical requirements."
+    ],
+    "2021": [
+      "Maintained legacy codebase while refactoring parts of the application to use newer technologies like React.js and Angular.",
+      "Implemented Redux & Redux-Saga as the management tool in the application.",
+      "Worked on Jest test coverage and achieved coverage 90% of all the 3 different applications.",
+      "Experience in implementing Formik, Material UI and React Router through out all the projects.",
+      "Experience in functional testing new features and defects to verify proper working order.",
+      "Utilized version control systems such as Git for tracking changes made in source code over time."
+    ]
+  },
+  "yearTwo": "2023",
+  "yearOne": "2021",
+  "email": "imrushi@gmail.com",
+  "phone": "(+91) 9503432790",
+  "location": "Pune, India",
+  "mailto": "mailto:imrushi@gmail.com",
+  "tel": "tel:+919503432790",
+  "github": "https://github.com/rushij27",
+  "linkedin": "https://www.linkedin.com/in/rushiikeshjagtap/",
+  "address": "https://www.google.com/maps/place/Talegaon+Dabhade,+Maharashtra/",
+  "thanks": "Thanks for Scrolling",
+  "copyright": "2024 Rushikesh Jagtap. All rights reserved."
+}
