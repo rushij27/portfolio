@@ -82,7 +82,7 @@ const Portfolio = () => {
             </div>
             <div className="mt-1">
               <button className="cursor-pointer bg-yellow-500 text-black px-6 py-2 rounded-md transform transition-transform duration-300 hover:scale-110">
-                <a href="/Rushikesh_Jagtap_Resume.pdf" className="flex flex-row items-center">
+                <a href="/Rushikesh_Jagtap_Resume.pdf" download={true} className="flex flex-row items-center">
                   <Download className="mr-1" size={18} /> Download Resume
                 </a>
               </button>
