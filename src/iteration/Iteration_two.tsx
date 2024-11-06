@@ -12,7 +12,7 @@ import Redux from "./assets/images/redux.png";
 import Logo from "./assets/images/RJ_-removebg-preview.png";
 import Tailwind from "./assets/images/tailwind.png";
 import Typescript from "./assets/images/typescript.png";
-import data from "./assets/data/data.json";
+import data from "../assets/data/data.json";
 
 interface SkillIconProps {
   name: string;

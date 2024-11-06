@@ -1,7 +1,7 @@
 import { ExternalLink, GithubIcon } from "lucide-react";
 import React from "react";
 import data from "../assets/data/data.json";
-import banner from "../../public/DALL·E 2024-11-07 00.01.13 - A clean, minimalist portfolio project showcase for a frontend developer. Display a simple web application layout with a few key components_ a navigati.webp";
+import banner from "../../public/banner.webp";
   
   const ProjectCard = ({ project }: any) => {
     return (
