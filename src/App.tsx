@@ -1,5 +1,5 @@
-import './App.css'
-import Portfolio from './Iteration_two'
+import './App.css';
+import Portfolio from './PortFolio';
 
 function App() {
 
