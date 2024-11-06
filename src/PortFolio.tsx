@@ -62,6 +62,7 @@ const Portfolio = () => {
     Object.entries(refs).forEach(([key, ref]) => {
       if (ref.current) {
         observer.observe(ref.current);
+        setActiveSection(key);
       }
     });
 
