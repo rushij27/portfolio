@@ -142,10 +142,11 @@ const Portfolio = () => {
                   key={index}
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
+                  onClick={() => window.open(Icon === LinkedinIcon ? data.linkedin : data.github, "_blank")}
                 >
                   <Icon 
                     className="hover:text-violet-400 transition-colors duration-300 cursor-pointer" 
-                    size={20} 
+                    size={20}
                   />
                 </motion.div>
               ))}
@@ -283,8 +284,8 @@ const Portfolio = () => {
               {/* Main Technical Skills */}
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
                 {[
-                  { name: "Angular", icon: <img src={Angular} alt="Angular" />, delay: 0 },
-                  { name: "React", icon: <img src={React} alt="React" />, delay: 100 },
+                  { name: "React", icon: <img src={React} alt="React" />, delay: 0 },
+                  { name: "Angular", icon: <img src={Angular} alt="Angular" />, delay: 100 },
                   { name: "Javascript", icon: <img src={Javascript} alt="Javascript" />, delay: 200 },
                   { name: "Typescript", icon: <img src={Typescript} alt="Typescript" />, delay: 300 },
                   { name: "Redux", icon: <img src={Redux} alt="Redux" />, delay: 400 },
