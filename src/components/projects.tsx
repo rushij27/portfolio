@@ -18,28 +18,20 @@ import banner from "../../public/banner.webp";
           <div className="absolute inset-0 bg-gradient-to-t from-indigo-950 via-indigo-950/80 to-transparent 
             opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
             <div className="px-6 py-4 text-center translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
-              <div className="flex gap-4 justify-center mb-4">
-                <a 
-                  href={project.demoLink} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded-full 
+              <div className="flex gap-4 justify-center mb-4 cursor-wait">
+                <span className="bg-violet-500 hover:bg-violet-600 text-white px-4 py-2 rounded-full 
                     flex items-center gap-2 text-sm font-medium transform hover:scale-105 transition-all duration-300"
                 >
                   <ExternalLink size={16} />
                   Live Demo
-                </a>
-                <a 
-                  href={project.githubLink} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-indigo-950/50 hover:bg-indigo-900 text-white px-4 py-2 rounded-full 
+                </span>
+                <span className="bg-indigo-950/50 hover:bg-indigo-900 text-white px-4 py-2 rounded-full 
                     flex items-center gap-2 text-sm font-medium border border-violet-500/30 
                     transform hover:scale-105 transition-all duration-300"
                 >
                   <GithubIcon size={16} />
                   Code
-                </a>
+                </span>
               </div>
             </div>
           </div>

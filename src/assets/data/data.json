@@ -43,25 +43,25 @@
   "copyright": "2024 Rushikesh Jagtap. All rights reserved.",
   "projects": [
     {
-      "title": "E-Commerce Dashboard",
-      "description": "Full-stack dashboard with React, Node.js, and MongoDB",
-      "tech": ["React", "Node.js", "MongoDB"],
+      "title": "Online Bus Ticketing Tool",
+      "description": "Full-stack application with React, Node.js, and MongoDB",
+      "tech": ["React", "TypeScript", "Node.js", "MongoDB"],
       "image": "https://cdn.dribbble.com/userupload/11281034/file/original-fb0a13c38f977434dd6a1dfbca8db8d4.jpg?resize=1504x1128",
       "demoLink": "https://dashboard-demo.com",
       "githubLink": "https://github.com/yourusername/dashboard"
     },
     {
-      "title": "Task Management App",
-      "description": "Real-time task management with Angular and Firebase",
-      "tech": ["Angular", "Firebase", "TypeScript"],
+      "title": "BloodLine",
+      "description": "Innovative application for the Medical industry. Revolutionalizing the blood pipeline.",
+      "tech": ["Next.js", "TypeScript"],
       "image": "https://cdn.dribbble.com/userupload/11281899/file/original-2843ddf1ab35c87f9cd42b42caa0f11b.png?resize=1504x1128",
       "demoLink": "https://task-app-demo.com",
       "githubLink": "https://github.com/yourusername/task-app"
     },
     {
-      "title": "Social Media Platform",
+      "title": "Jobs Portal",
       "description": "Social platform with user authentication and real-time chat",
-      "tech": ["React", "Socket.io", "Redux"],
+      "tech": ["Vue.js", "TypeScript"],
       "image": "https://cdn.dribbble.com/userupload/11281024/file/original-0a7ebed814c1db82544b4495461ee62c.jpg?resize=1504x1128",
       "demoLink": "https://social-demo.com",
       "githubLink": "https://github.com/yourusername/social-platform"

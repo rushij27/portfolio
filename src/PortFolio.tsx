@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ChevronRight, Download, GithubIcon, LinkedinIcon, Mail, MapPin, Phone } from "lucide-react";
+import { ChevronRight, Download, EyeIcon, GithubIcon, LinkedinIcon, Mail, MapPin, Phone } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import data from "./assets/data/data.json";
 import ProfilePhoto from "./assets/images/1677389255776_1__1_-removebg-preview(1)(1).png";
@@ -15,6 +15,7 @@ import Tailwind from "./assets/images/tailwind.png";
 import Typescript from "./assets/images/typescript.png";
 import { fadeInUp, staggerChildren } from "./components/header";
 import ProjectsSection from "./components/projects";
+import UnderConstruction from './components/underconstruction';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -155,6 +156,12 @@ const Portfolio = () => {
         </nav>
       </motion.header>
 
+      {/* Underconstruction */}
+
+      <section className="container mx-auto px-6 py-20">
+        <UnderConstruction />
+      </section>
+
       {/* Hero Section */}
       <section 
         ref={refs.home}
@@ -178,6 +185,16 @@ const Portfolio = () => {
               >
                 Contact Me
               </button>
+              <a 
+                 href="/Rushikesh_Jagtap_Resume.pdf" 
+                target='_blank'
+                className="px-8 py-3 border-2 border-violet-500 text-violet-400 rounded-full font-medium 
+                  hover:bg-violet-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2
+                  transform hover:scale-105"
+              >
+                <EyeIcon size={18} />
+                View CV
+              </a>
               <a 
                 href="/Rushikesh_Jagtap_Resume.pdf" 
                 download
@@ -228,7 +245,7 @@ const Portfolio = () => {
                   3+ Years Experience
                 </span>
                 <span className="px-4 py-2 bg-violet-500/20 rounded-full text-violet-400">
-                  20+ Projects Completed
+                  10+ Projects Completed
                 </span>
                 <span className="px-4 py-2 bg-violet-500/20 rounded-full text-violet-400">
                   Frontend Specialist
