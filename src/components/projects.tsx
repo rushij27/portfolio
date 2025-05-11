@@ -10,7 +10,7 @@ import banner from "../../public/banner.webp";
         {/* Image Container */}
         <div className="relative overflow-hidden aspect-[4/3]">
           <img 
-            src={banner} 
+            src={project.image || banner} 
             alt={project.title}
             className="w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-500"
           />
