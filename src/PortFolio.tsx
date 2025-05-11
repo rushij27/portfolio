@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ChevronRight, Download, EyeIcon, GithubIcon, LinkedinIcon, Mail, MapPin, Phone } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import data from "./assets/data/data.json";
-import ProfilePhoto from "./assets/images/1677389255776_1__1_-removebg-preview(1)(1).png";
+import ProfilePhoto from "./assets/images/profile-photo.jpg";
 import Angular from "./assets/images/angular.png";
 import CSS from "./assets/images/css.png";
 import Git from "./assets/images/git.png";
@@ -176,7 +176,7 @@ const Portfolio = () => {
               text-transparent bg-clip-text animate-fadeUp">
               Rushikesh Jagtap
             </h1>
-            <div className="text-xl text-gray-300 animate-fadeUp delay-200">Frontend Developer</div>
+            <div className="text-xl text-gray-300 animate-fadeUp delay-200">Senior Software Engineer</div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8">
               <button 
                 onClick={() => scrollTo(refs.contact)}
@@ -186,7 +186,7 @@ const Portfolio = () => {
                 Contact Me
               </button>
               <a 
-                 href="/Rushikesh_Jagtap_Resume.pdf" 
+                 href="/Rushikesh Jagtap - Developer.pdf" 
                 target='_blank'
                 className="px-8 py-3 border-2 border-violet-500 text-violet-400 rounded-full font-medium 
                   hover:bg-violet-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2
@@ -196,7 +196,7 @@ const Portfolio = () => {
                 View CV
               </a>
               <a 
-                href="/Rushikesh_Jagtap_Resume.pdf" 
+                href="/Rushikesh Jagtap - Developer.pdf" 
                 download
                 className="px-8 py-3 border-2 border-violet-500 text-violet-400 rounded-full font-medium 
                   hover:bg-violet-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2
