@@ -12,7 +12,7 @@
   "company": "Invimatic Technologies, Pune",
   "aboutMe": "I specialize in building and maintaining modern, responsive web applications using React, Angular, Redux, JavaScript, TypeScript, HTML, and CSS. With a passion for clean code and user-focused design, I excel at managing multiple projects and mentoring junior developers. My strong problem-solving skills, attention to detail and ability to adapt quickly help me consistently deliver high-quality work. I thrive in collaborative environments and always seek new opportunities to learn and improve.",
   "experienceDescription": {
-    "2023": [
+    "2025": [
       "Developed and maintained applications with Tailwind CSS, Formik, and custom components.",
       "Designed, developed, tested, and deployed high-quality applications utilizing Agile methodology.",
       "Managed multiple projects simultaneously while meeting tight deadlines.",
@@ -29,7 +29,7 @@
       "Utilized version control systems such as Git for tracking changes made in source code over time."
     ]
   },
-  "yearTwo": "2023",
+  "yearTwo": "Present",
   "yearOne": "2021",
   "email": "imrushi@gmail.com",
   "phone": "(+91) 9503432790",
@@ -43,28 +43,28 @@
   "copyright": "2024 Rushikesh Jagtap. All rights reserved.",
   "projects": [
     {
-      "title": "Online Bus Ticketing Tool",
-      "description": "Full-stack application with React, Node.js, and MongoDB",
-      "tech": ["React", "TypeScript", "Node.js", "MongoDB"],
-      "image": "https://cdn.dribbble.com/userupload/11281034/file/original-fb0a13c38f977434dd6a1dfbca8db8d4.jpg?resize=1504x1128",
-      "demoLink": "https://dashboard-demo.com",
-      "githubLink": "https://github.com/yourusername/dashboard"
+      "title": "Nex-Room, a conference booking system",
+      "description": "Social platform with user authentication and real-time chat",
+      "tech": ["React", "JavaScript"],
+      "image": "/src/assets/images/app_logo.png",
+      "demoLink": "https://nex-room.netlify.app/",
+      "githubLink": "https://github.com/rushij27/conference-room-booking/"
     },
     {
       "title": "BloodLine",
       "description": "Innovative application for the Medical industry. Revolutionalizing the blood pipeline.",
       "tech": ["Next.js", "TypeScript"],
-      "image": "https://cdn.dribbble.com/userupload/11281899/file/original-2843ddf1ab35c87f9cd42b42caa0f11b.png?resize=1504x1128",
+      "image": "/banner.webp",
       "demoLink": "https://task-app-demo.com",
       "githubLink": "https://github.com/yourusername/task-app"
     },
     {
-      "title": "Jobs Portal",
-      "description": "Social platform with user authentication and real-time chat",
-      "tech": ["Vue.js", "TypeScript"],
-      "image": "https://cdn.dribbble.com/userupload/11281024/file/original-0a7ebed814c1db82544b4495461ee62c.jpg?resize=1504x1128",
-      "demoLink": "https://social-demo.com",
-      "githubLink": "https://github.com/yourusername/social-platform"
+      "title": "Online Bus Ticketing Tool",
+      "description": "Full-stack application with React, Node.js, and MongoDB",
+      "tech": ["React", "TypeScript", "Node.js", "MongoDB"],
+      "image": "/banner.webp",
+      "demoLink": "https://dashboard-demo.com",
+      "githubLink": "https://github.com/yourusername/dashboard"
     }
   ]
 }

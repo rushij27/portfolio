@@ -260,7 +260,7 @@ const Portfolio = () => {
                     year: data.yearTwo,
                     title: data.designation,
                     company: data.company,
-                    description: data.experienceDescription[2023]
+                    description: data.experienceDescription[2025]
                   },
                   {
                     year: data.yearOne,
